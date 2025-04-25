@@ -2,22 +2,11 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 14
     commands:
-      - echo Installing dependencies...
-      - npm install
-
+      - echo "Nothing to install for static site"
   build:
     commands:
-      - echo Building the project...
-      - npm run build
-
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      
+      - echo "No build step needed for static site"
 artifacts:
   files:
     - '**/*'
-  discard-paths: yes
