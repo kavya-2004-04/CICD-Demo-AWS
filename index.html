@@ -2,108 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team RADHIKA - Profile</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team RADHIKA - Profile Page</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0e0e0e;
-      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
     }
     header {
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(to right, #5c258d, #4389a2);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 2rem 1rem;
     }
-    header h1 {
+    h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
     }
     .team-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 2rem;
       padding: 2rem;
     }
-    .card {
-      background: #1f1f1f;
-      margin: 1rem;
+    .member-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
       padding: 1.5rem;
-      border-radius: 12px;
-      width: 260px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.05);
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-align: center;
+      width: 250px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
     }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(255,255,255,0.15);
-    }
-    .card img {
-      width: 100px;
-      height: 100px;
+    .member-card img {
       border-radius: 50%;
+      width: 120px;
+      height: 120px;
       object-fit: cover;
       margin-bottom: 1rem;
     }
-    .card h3 {
-      margin: 0.5rem 0;
+    .member-name {
+      font-size: 1.3rem;
+      font-weight: bold;
     }
-    .card p {
+    .member-role {
+      font-size: 1rem;
+      color: #dcdcdc;
+    }
+    footer {
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.2);
       font-size: 0.9rem;
-      color: #bbb;
-    }
-    .social-icons a {
-      color: #ccc;
-      margin: 0 10px;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-    .social-icons a:hover {
-      color: #fff;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Meet Our Team - RADHIKA</h1>
-    <p>CI/CD Pipeline Automation Project</p>
+    <h1>Welcome to Team RADHIKA</h1>
+    <p>Meet Our Amazing Team!</p>
   </header>
 
-  <div class="team-container">
-    <div class="card">
-      <img src="https://via.placeholder.com/100" alt="Radhika" />
-      <h3>Radhika</h3>
-      <p>DevOps Lead</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
+  <section class="team-container">
+    <div class="member-card">
+      <img src="https://via.placeholder.com/120" alt="Member Photo">
+      <div class="member-name">Radhika</div>
+      <div class="member-role">Team Lead</div>
     </div>
+    <div class="member-card">
+      <img src="https://via.placeholder.com/120" alt="Member Photo">
+      <div class="member-name">Kavya</div>
+      <div class="member-role">Frontend Developer</div>
+    </div>
+    <div class="member-card">
+      <img src="https://via.placeholder.com/120" alt="Member Photo">
+      <div class="member-name">Srinivas</div>
+      <div class="member-role">DevOps Engineer</div>
+    </div>
+    <!-- Add more members as needed -->
+  </section>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/100" alt="Member" />
-      <h3>Team Member 1</h3>
-      <p>Frontend Developer</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/100" alt="Member" />
-      <h3>Team Member 2</h3>
-      <p>AWS Specialist</p>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </div>
+  <footer>
+    &copy; 2025 Team RADHIKA | Powered by AWS & GitHub Actions
+  </footer>
 </body>
 </html>
